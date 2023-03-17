@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<style>
+	.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  /* background-color: #8aeff1; */
+  color: rgb(16, 1, 1);
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+	<title>Home page recipes</title>
+</head>
+<body>
+	<h1>welcome to the recipes page</h1>
+	<p>Lamb kabsa recipe</p> 
+	<div class="container">
+		<a href="recipes/lamb-kabsa.html"><img src="recipe-images/lamb-kabsa.jpg" alt="Avatar" class="image" style="width:100%">
+			<div class="middle">
+		  <div class="text">lamb kabsa<p>Kabsa is a fragrant rice dish that can be made with chicken, lamb or beef. This one pot meal is very popular in the gulf area of the Arabian-peninsula such as in Dubai, Bahrain, Oman, Kuwait, Saudi Arabia and many more countries. However, this dish originated in Saudi Arabia and is known as their national dish.
+		</p></div>
+		</div></a>
+	</div>
+
+	<p>teriyaki salmon</p>
+	<div class="container">
+		<a href="recipes/teriyaki-salmon.html"><img src="recipe-images/teriyaki-salmon.jpg" alt="Avatar" class="image" style="width:100%">
+		<div class="middle">
+		  <div class="text">teriyaki salmon <p>This recipe never fails to be a hit, whether we broil the salmon in the oven or grill it outdoors. Pair it with some homemade teriyaki fried rice to complete your meal. </p></div>
+		</div></a>
+	</div>
+
+	<p>creamy pasta</p>
+	<div class="container">
+		<a href="recipes/creamy-pasta-bake.html"><img src="recipe-images/creamy-pasta-bake.jpg" alt="Avatar" class="image" style="width:100%">
+		<div class="middle">
+		  <div class="text">Creamy past <p>This creamy pasta bake is one of my favorite midweek pasta dishes. My whole family loves it, and there is not much prep. Once the pasta bake is in the oven, you can make a salad or set the table, and then it's time to eat.</p></div>
+		</div></a>
+	</div>
+</body>
+</html>
